@@ -1,8 +1,9 @@
-<?php 
+<?php
     require_once 'pessoa.php';
-    require_once 'carro.php';
+    require_once 'Carro.php';
     require_once 'livro.php';
-    $ca = new carro();
+
+    $ca = new Carro(); //classes devem sempre iniciar com maiúscula
     $p = new pessoa();
     $l = new livro();
     //sett pessoa
@@ -11,10 +12,12 @@
     $p->setPeso(66.0);
     $p->setSexo();
     //sett carro
-    $ca->setMarca();
-    $ca->setCor();
-    $ca->setPlaca();
-    $ca->setModelo();
+    $ca->setMarca("Marca aqui"); //altere todos os objetos, deixando-os da forma correta,
+                                //com o método setter recebendo a informação como parâmetro
+    $ca->setCor("Cor aqui");
+    $ca->setPlaca("Placa aqui");
+    $ca->setModelo("Modelo aqui");
+
     //sett livro
     $l->setTitulo();
     $l->setAutor();
